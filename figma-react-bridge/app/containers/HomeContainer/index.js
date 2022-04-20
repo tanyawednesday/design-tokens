@@ -140,7 +140,8 @@ export function HomeContainer({
   };
 
   return (
-    <Container maxwidth={maxwidth} padding={padding}>
+    <>
+      {/*<Container maxwidth={maxwidth} padding={padding}>
       <RightContent>
         <StyledT onClick={handleStoriesClick} data-testid="redirect" id="stories" />
       </RightContent>
@@ -152,12 +153,15 @@ export function HomeContainer({
           type="text"
           onChange={(evt) => debouncedHandleOnChange(evt.target.value)}
           onSearch={(searchText) => debouncedHandleOnChange(searchText)}
-        />
+        /> */}
+      <div style={{ display: 'flex', justifyContent: 'center', margin: '40px' }}>
         <Button>Button</Button>
-      </CustomCard>
+      </div>
+      {/* </CustomCard>
       {renderRepoList()}
-      {renderErrorState()}
-    </Container>
+      {renderErrorState()} */}
+      {/* </Container> */}
+    </>
   );
 }
 
